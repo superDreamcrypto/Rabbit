@@ -1,0 +1,92 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-image {
+  width: 700px;
+  height: auto;
+}
+
+.tagline {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.subtext {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.app-button,
+.whitepaper-button {
+  font-size: 1.25rem;
+  margin: 5px 15px;
+  border: none;
+  border-radius: 40px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.8rem 2.5rem;
+}
+
+.app-button {
+  background: linear-gradient(45deg, #00e5ff, #0061ff);
+}
+
+.whitepaper-button {
+  background: linear-gradient(45deg, #7b2ff7, #00e5ff); /* Purple to cyan */
+}
+
+.app-button:hover {
+  background: linear-gradient(
+    45deg,
+    #003344,
+    #00b0b0
+  ); /* Darker cyan and blue */
+}
+
+.whitepaper-button:hover {
+  background: linear-gradient(
+    45deg,
+    #3b0055,
+    #5500aa
+  ); /* Darker purple and blue */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero-image {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 350px; /* Limit max width on mobile */
+    height: auto;
+  }
+
+  .tagline {
+    font-size: 1.5rem; /* Smaller font size for tagline */
+    text-align: center;
+  }
+
+  .subtext {
+    font-size: 1rem; /* Smaller font size for subtext */
+    text-align: center;
+  }
+
+  .app-button,
+  .whitepaper-button {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 0.6rem 1.5rem; /* Smaller padding */
+    margin: 5px 10px;
+  }
+}

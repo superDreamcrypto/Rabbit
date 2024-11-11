@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 3rem;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(
+    -90deg,
+    #00b0ff,
+    #00e5ff
+  ); /* Gradient from bright blue to cyan */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem; /* Smaller font size */
+    font-weight: bold;
+    background: linear-gradient(-90deg, #00b0ff, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+  }
+}
